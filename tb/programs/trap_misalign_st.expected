@@ -1,0 +1,3 @@
+TRAP store misaligned addr=00002003
+CHECKSUM 96e64711
+STEPS 7

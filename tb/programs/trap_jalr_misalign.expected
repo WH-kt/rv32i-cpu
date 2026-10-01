@@ -1,0 +1,3 @@
+TRAP instr misaligned addr=0000002a
+CHECKSUM 1ab8273e
+STEPS 8

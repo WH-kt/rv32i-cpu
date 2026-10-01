@@ -1,0 +1,3 @@
+TRAP load misaligned addr=00002001
+CHECKSUM 7283ce71
+STEPS 6

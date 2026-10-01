@@ -1,0 +1,49 @@
+#============================================================================
+# rv32i_soc.ys -- Yosys synthesis / resource report script
+#
+#   yosys -q syn/rv32i_soc.ys        (or: make syn)
+#
+# Yosys is not part of this project's required tool set: the RTL is verified
+# with Icarus and Verilator, and the flow is intentionally free of vendor IP so
+# that any synthesiser can read it.  Run this if you have yosys installed to get
+# real cell counts instead of the structural estimate in
+# docs/08-synthesis-area-timing.md.
+#
+# The generic flow maps to $_AND_/$_DFF_ style internal cells; feed the result
+# to `abc` with a liberty file (or use a technology specific `synth_*` command,
+# e.g. synth_ice40 / synth_ecp5 / synth_xilinx) to get LUT and FF utilisation.
+#============================================================================
+
+# ---- read the design ------------------------------------------------------
+verilog_defaults -add -Irtl/include
+read_verilog rtl/alu/rv32i_alu.v
+read_verilog rtl/alu/rv32i_brcmp.v
+read_verilog rtl/regfile/rv32i_regfile.v
+read_verilog rtl/control/rv32i_immgen.v
+read_verilog rtl/control/rv32i_decoder.v
+read_verilog rtl/control/rv32i_hazard.v
+read_verilog rtl/core/rv32i_cpu.v
+read_verilog rtl/memory/rv32i_ram.v
+read_verilog rtl/soc/rv32i_soc.v
+
+# ---- generic synthesis ----------------------------------------------------
+hierarchy -top rv32i_soc
+proc
+opt
+fsm
+opt
+memory -nomap
+opt -full
+techmap
+opt -fast
+
+# ---- reports --------------------------------------------------------------
+stat
+stat -width
+ltp -noff
+
+# ---- optional: uncomment one technology mapping to get LUT/FF utilisation ---
+# synth_xilinx -top rv32i_soc
+# synth_ice40  -top rv32i_soc
+# synth_ecp5   -top rv32i_soc
+# stat
