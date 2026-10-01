@@ -132,3 +132,11 @@ rv32i-cpu/
 
 **工具链要求**：`iverilog` ≥ 11、`verilator` ≥ 5、`gtkwave`、`python3`（仅标准库）；
 `yosys` 可选（只有 `make syn` 与真实面积/时序数字需要它）。
+
+## 许可证
+
+MIT，见 [LICENSE](LICENSE)。
+
+`tools/vendor/` 下的汇编器与参考模型来自同一作者的 rvai 项目，采用同一许可证，
+且保持与来源逐字节一致（校验和见 `tools/vendor/README.md`）；其余 RTL、testbench、
+测试程序、工具与文档均为本工程原创。

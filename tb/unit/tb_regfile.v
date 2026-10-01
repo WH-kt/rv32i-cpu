@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 //============================================================================
 // tb_regfile.v -- unit test for rv32i_regfile
 //

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """rv32i-cpu -- decide every test program's outcome.
 
 Two kinds of program live in tb/programs:

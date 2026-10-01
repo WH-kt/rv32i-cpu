@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 #============================================================================
 # rv32i-cpu -- build, simulate, differential verification, lint
 #

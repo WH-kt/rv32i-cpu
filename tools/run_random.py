@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """rv32i-cpu -- constrained random differential regression.
 
 For every seed: generate a random program, run it on the RTL and on the

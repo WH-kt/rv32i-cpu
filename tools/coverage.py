@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """rv32i-cpu -- dynamic instruction coverage from the RTL's retire port.
 
 `make sim` can be run with tracing enabled; the testbench then writes one line

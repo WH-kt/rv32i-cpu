@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 `timescale 1ns/1ps
 //============================================================================
 // rv32i_hazard.v -- forwarding selects and the load-use interlock

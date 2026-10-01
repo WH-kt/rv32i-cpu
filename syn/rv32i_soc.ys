@@ -1,3 +1,4 @@
+# SPDX-License-Identifier: MIT
 #============================================================================
 # rv32i_soc.ys -- Yosys synthesis / resource report script
 #

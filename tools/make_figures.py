@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """rv32i-cpu -- generate the block diagram and the pipeline timing diagram.
 
 Run with any Python 3 that has Pillow:

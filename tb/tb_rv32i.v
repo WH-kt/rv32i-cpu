@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 //============================================================================
 // tb_rv32i.v -- self-checking SoC level testbench
 //

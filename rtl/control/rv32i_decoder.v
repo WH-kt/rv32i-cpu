@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 `timescale 1ns/1ps
 //============================================================================
 // rv32i_decoder.v -- main control decoder

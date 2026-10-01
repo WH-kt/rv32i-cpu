@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """rv32i-cpu -- flip-flop accounting straight from the RTL.
 
 Real area numbers need a synthesis tool (see syn/README.md).  What this script

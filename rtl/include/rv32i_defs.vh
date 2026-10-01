@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 //============================================================================
 // rv32i_defs.vh -- shared constants for the rv32i-cpu core
 //

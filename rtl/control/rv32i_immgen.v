@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 `timescale 1ns/1ps
 //============================================================================
 // rv32i_immgen.v -- immediate generator (I / S / B / U / J formats)

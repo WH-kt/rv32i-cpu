@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """rv32i-cpu -- constrained random RV32I program generator.
 
 Purpose: hit hazard combinations that hand written tests do not think of.  The

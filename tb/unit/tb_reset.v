@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 //============================================================================
 // tb_reset.v -- reset determinism and the reset-to-first-instruction timing
 //

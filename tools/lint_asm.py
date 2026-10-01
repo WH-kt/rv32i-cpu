@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """rv32i-cpu -- immediate range linter for the assembly test programs.
 
 The bundled assembler encodes I/S type immediates without range checking, so

@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# SPDX-License-Identifier: MIT
 """rv32i-cpu -- differential architectural state comparison.
 
     check_equiv.py <image.hex> <state_file> [--max N] [--iss-dir DIR]

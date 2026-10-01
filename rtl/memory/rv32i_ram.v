@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 `timescale 1ns/1ps
 //============================================================================
 // rv32i_ram.v -- word addressed RAM with byte write enables

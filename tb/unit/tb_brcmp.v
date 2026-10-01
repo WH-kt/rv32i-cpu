@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 //============================================================================
 // tb_brcmp.v -- unit test for rv32i_brcmp
 //

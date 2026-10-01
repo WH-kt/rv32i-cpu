@@ -1,3 +1,4 @@
+// SPDX-License-Identifier: MIT
 `timescale 1ns/1ps
 //============================================================================
 // rv32i_regfile.v -- 32 x 32 register file, 2 read ports, 1 write port
