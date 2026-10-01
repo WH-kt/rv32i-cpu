@@ -1,4 +1,4 @@
-# rv32i-cpu — 五级流水线 RV32I 处理器
+# DeepSeek-BlueWhale-CPU — 一款由Deepseek-v4.1-flash自主设计的五级流水线 RV32I 处理器
 
 单核、顺序、单发射的 **RISC-V RV32I** 处理器。Verilog-2001/2005 实现，无厂商 IP，
 只用开源工具（Icarus Verilog / Verilator / GTKWave / Python 3）即可完成仿真、
@@ -114,7 +114,7 @@ rv32i-cpu/
 - 存储器为**零延迟组合读**：FPGA 大容量实现需分布式 RAM，或增加 ready 握手 / IF2 级；
 - 无 CSR / 特权模式 / 中断；非对齐访存触发陷阱；无 M 扩展；
 - 控制转移固定 2 拍惩罚（无分支预测，符合规格要求）；
-- 面积/时序为**结构估算**（本机无 Yosys），提供 `syn/` 脚本以获取实测值。
+- 面积/时序为**结构估算**，提供 `syn/` 脚本以获取实测值。
 
 ## 外部依赖
 
